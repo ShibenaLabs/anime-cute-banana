@@ -13,7 +13,7 @@ RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git && \
     git checkout 3e0f9a75438fa815429b5530261bcf7d80f3f101
 WORKDIR /app/stable-diffusion-webui
 
-RUN wget -O models/Stable-diffusion/model.safetensors 'https://huggingface.co/swl-models/chilloutmix-ni/resolve/main/chilloutmix-Ni.safetensors'
+RUN wget -O models/Stable-diffusion/model.safetensors 'https://huggingface.co/Vadermusic/just4fun/resolve/main/sunshinemix_sunlightmix.safetensors'
 RUN echo 2
 ADD prepare.py .
 RUN python prepare.py --skip-torch-cuda-test --xformers --reinstall-torch --reinstall-xformers
